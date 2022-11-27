@@ -1,0 +1,407 @@
+:root{
+    --main-color:#757575;
+    --second-color:#212121;
+    --third-color:#FFFFFF;    
+    --accent-color:#2196F3;
+    --logo-color:#000000;
+    --hero-bckgd-color:#2F303A;
+    --hero-btn-color:#188CE8;
+    --bckgd-color:#F5F4FA;
+    --foot-item-color:rgba(255, 255, 255, 0.6);
+    --heard-bord-color:#ECECEC;
+    --prtf-bord-color:#EEEEEE;
+}
+
+body {
+    font-family: Roboto, Sans-serif;    
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background-color:var(--third-color);
+}
+
+img {   
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0; 
+}
+
+.link {
+    text-decoration:none;
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+p,
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul{
+    display: block;
+    margin: 0;
+    padding-left: 0;
+ }
+
+.container{
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+
+/*-------- Hearder ------------------*/
+
+.hearder{
+    border-bottom:1px solid var(--heard-bord-color)
+}
+
+.hearder .container {
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+}
+
+.hearder-nav {
+    display: flex;
+    align-items: center;
+}
+    
+        .hearder-list{
+            display: flex;
+            
+        }
+
+        .hearder-list li+li {
+            margin-left: 50px;
+        }
+
+        
+.hearder-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.hearder-contacts li+li{
+    margin-left: 40px;
+}
+
+
+.logo{
+    display: block;
+    margin-right: 93px;
+
+    font-family: 'Raleway', Sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.logo2{
+    color: var(--logo-color);
+}
+
+.logo3{
+    color: var(--third-color);
+}
+
+.hearder-list-item {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+
+.active {
+    color: var(--accent-color);
+}
+
+.hearder-list-item:hover,
+.hearder-list-item:focus {
+    color: var(--accent-color);
+}
+
+
+.hearder-cont-item {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.hearder-cont-item:hover,
+.hearder-cont-item:focus {
+    color: var(--accent-color);
+}
+
+/*-------- Index Hero ------------------*/
+
+.hero{
+    background-color: var(--hero-bckgd-color);
+    padding: 200px 0;
+}
+
+.hero-header {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-color);
+    width: 700px;
+}
+
+.hero-btn {
+    margin: 0 auto;
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;    
+    letter-spacing: 0.06em;
+    color: var(--third-color);      
+    background-color: var(--accent-color);
+
+    height: 50px;
+    width: 216px;
+    left: 692px;
+    top: 430px;
+    border-radius: 4px;
+    border:none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--hero-btn-color);
+}
+
+/*-------- Index Our Benefits ------------------*/
+
+.our-benefits{ 
+    padding: 94px 0;
+}
+
+.our-benefits-list-header {
+    font-weight: 700;  
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+.our-benefits-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-item{
+    width: 270px;
+}
+
+
+/*-------- Index Work ------------------*/
+
+.our-work{
+padding-bottom: 94px;
+}
+
+.our-work-hearder {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color:var(--second-color);
+}
+
+.our-work-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*-------- Index Team ------------------*/
+
+.team{
+    background-color: var(--bckgd-color);
+    padding: 94px 0;    
+}
+
+.team-hearder {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.team-list-item{
+    padding-bottom: 30px;
+    width: 270px;
+    background: var(--third-color);
+}
+
+
+.team-list-hearder {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.team-list-text {
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/*-------- Footer ------------------*/
+
+footer {
+    background-color:var(--hero-bckgd-color);
+    padding: 60px 0;
+}
+
+.footer .logo{
+    padding-bottom: 20px;
+}
+
+address{
+    font-style: normal;
+}
+
+.footer-adress {
+    color: var(--third-color);  
+}
+
+.footer-list li+li{
+    margin-top: 9px;
+}
+
+.footer-item {
+    color: var(--foot-item-color);
+}
+
+.footer-item:hover,
+.footer-item:focus {
+    color: var(--accent-color);
+}
+
+
+
+/*-------- Portfolio------------------*/
+
+.portfolio{
+    padding: 94px 0;
+}
+
+/*-------- Portfolio Filters------------------*/
+
+.filters-list{
+    display: flex;
+    margin-bottom: 34px;
+    justify-content: center;
+}
+
+.filters-list li+li{
+    margin-left: 8px;
+}
+
+.filters-item {
+    padding: 6px 22px;
+    border: none;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color:var(--second-color);
+    background: var(--bckgd-color);
+    border-radius: 4px;
+}
+
+.filters-item:hover,
+.filters-item:focus {
+    color: var(--third-color);
+    background-color: var(--accent-color);
+}
+
+
+/*-------- Portfolio Portfolio------------------*/
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;  
+}
+
+.portfolio-item{
+    flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+
+    background: var(--third-color);
+    border-bottom: 1px solid var(--prtf-bord-color);
+}
+
+.portfolio-item-hearder {
+    padding: 20px 24px 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-color);
+}
+
+.portfolio-item-text {
+    padding: 0px 24px 20px;
+
+    font-size: 16px;
+    line-height: 1.88;
+}
